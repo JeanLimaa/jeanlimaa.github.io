@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Jean Lima" content="Portfolio de Jean Lima, desenvolvedor web.">
+    <title>Portfolio Jean</title>
+    <!-- link boxicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- script boxicon -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- css externo -->
+    <link rel="stylesheet" href="style.css">
+    <!-- script externo -->
+    <script src="main.js" defer></script>
+    <script src="typedJsEn.js" defer></script>
+    <!-- typed js -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="shortcut icon" href="./icons/favicon.png" type="image/x-icon">
+        <!-- swiper js/css -->
+        <link rel="stylesheet" href="swiperStyle.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
+        <script src="./swiper.js" defer></script>
+        <!-- css glitch do texto -->
+        <link rel="stylesheet" href="glitchText.css">
+        <!-- css scroll -->
+        <link rel="stylesheet" href="style-scroll.css">
+</head>
+
+<body>
+    <!-- header e navbar -->
+    <header class="header">
+        <a href="#" class="logo">My Portfolio</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <!-- seleção dos idiomas -->
+            <a href="indexEnglish.html" style="font-size: 1.2rem;" alt="EN-US" class="contentFlagEua"><img src="./icons/US.svg" alt="" id="#euaFlag"> EN-US</a>
+            <a href="index.html" style="font-size: 1.2rem;" alt="PT-BR" id="active-flag"><img src="./icons/BR.svg" alt="" id="#brFlag"> PT-BR</a>
+            <!-- navegação -->
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Projects</a>
+        </nav>
+    </header>
+    <!-- sessão inicial - home -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, this is me!</h3>
+            <h1>
+                <div class="glitch-wrapper">
+                    <div class="glitch" data-text="Jean Lima">Jean Lima</div>
+                 </div>
+            </h1>
+            <h3>And i am a <span class="multiple-textEnglish"></span></h3>
+            <p>Hello, welcome to my Portfolio. Here you can learn a little more about me and what I do! Below you will
+                find my Curriculum (PT-BR and EN-US) and my Social Networks for contact or visitation.</p>
+            <div class="social-media">
+                <a href="https://github.com/JeanLimaa" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/jean-lima-3aba14225/" target="_blank"><i
+                        class='bx bxl-linkedin-square'></i></a>
+                <a href="https://wa.me/qr/M3CYFANKHSN4M1" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+            </div>
+            <a href="./curriculos/ENGLISH CV.pdf" target="_blank" class="btn" download="ENGLISH CV - JEAN">Download
+                CV</a>
+        </div>
+        <div class="home-img">
+            <img src="./imagens/Jean-removebg-preview.png" alt="">
+
+        </div>
+    </section>
+    <!-- sessão sobre mim -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./imagens/Jean-removebg-preview.png" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Front-End Developer</h3>
+            <p>Hello again! My name is Jean Lima, I'm from the state of Bahia and I'm 19 years old. I am passionate
+                about Computing and I am currently studying a bachelor's degree in Computer Science, a course that I
+                really like and have been interested in since childhood.<span id="point">..</span> <span
+                    id="moreText">Despite this, I consider myself self-taught and in addition to college, I tend to
+                    study alone daily, in order to learn more about Software Development in general, but with a focus,
+                    initially, on Web Development. <span>Below you can find out more about what I know, what I've done
+                        and what I'm learning.</span></span> </p>
+            <button onclick="readMoreEnglish()" class="btn" id="btn readMore">Read more</button>
+        </div>
+    </section>
+    <!-- sessão serviços -->
+    <section class="services" id="services">
+        <h2 class="heading">Software Development <span>Skills</span></h2>
+        <!-- divisão principal com container de serviços -->
+        <div class="services-container">
+            <!-- divisão com container de serviços -->
+            <div class="services-box">
+                <i class='bx bx-code'></i>
+                <h3>Web Development</h3>
+                <p>My knowledge is mainly applied to the Web Development scenario.</p>
+                <a href="https://kenzie.com.br/blog/desenvolvimento-web/" class="btn" target="_blank">Read about</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bxl-html5'></i>
+                <h3>HTML5</h3>
+                <p>Advanced knowledge in HTML5 markup language.</p>
+                <a href="https://kenzie.com.br/blog/html5/" class="btn" target="_blank">Read about</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bxl-css3'></i>
+                <h3>CSS3</h3>
+                <p>Advanced knowledge in the CSS3 styling language.</p>
+                <a href="https://kenzie.com.br/blog/css3/" class="btn" target="_blank">Read about</a>
+            </div>
+            <div class="services-box" id="javascript">
+                <i class='bx bxl-javascript'></i>
+                <h3>JavaScript</h3>
+                <p>Advanced knowledge of the JavaScript programming language</p>
+                <a href="https://kenzie.com.br/blog/javascript/" class="btn" target="_blank">Read about</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bxl-react'></i>
+                <h3>React.js</h3>
+                <p>Basic knowledge in React.js technology. Currently studying, full interest in learning.</p>
+                <a href="https://kenzie.com.br/blog/react/" class="btn" target="_blank">Read about</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bxl-nodejs'></i>
+                <h3>Node.js</h3>
+                <p>Basic knowledge of Node.js technology. Currently studying, full interest in learning.</p>
+                <a href="https://nodejs.org/pt-br/about" class="btn" target="_blank">Read about</a>
+            </div>
+
+        </div>
+    </section>
+    <!-- section of projects -->
+    <section class="portfolio" id="portfolio">
+        <!-- titule section -->
+        <h2 class="heading">Last <span>Projects</span></h2>
+        <!-- swiper com os projetos -->
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="icon-layer">
+                        <i class='bx bxl-javascript' ></i>
+                    </div>
+                    <img src="./imagens/sustentabilidade.png" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Selective Collection Points</h4>
+                        <p>Website made with the objective of mapping the selective collection points in Salvador - BA, Brazil. In addition to containing an area with a didactic approach to the subject.</p>
+                        <a href="./projetos/ProjetoProfSheila/index.html" target="_blank"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                        <img src="./imagens/pokemon.png" alt="">
+                        <div class="portfolio-layer">
+                        <h4>Pokedex</h4>
+                        <p>Project of a Pokedex made using HTML/CSS/JS and the PokeAPI API.</p>
+                        <a href="./projetos/Pokedex/index.html" target="_blank"><i class='bx bx-link-external' ></i></a>
+                        </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./imagens/calculadora.png" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Calculator</h4>
+                        <p>Project of a calculator, using Javascript.</p>
+                        <a href="./projetos/Calculadora-JS/index.html" target="_blank"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./imagens/imagemParaPortfolioVazio.png" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Soon...</h4>
+                        <p>Evaluation of a SEBRAE game - Proposing innovations - University Project, in Brazil.</p>
+                        <a href="#portfolio" target=""><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./imagens/barbearia.png" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Soon...</h4>
+                        <p>Project made as a University work, of a website for scheduling services in a barbershop.</p>
+                        <a href="#portfolio" target=""><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev" id="prev-btn"></div>
+            <div class="swiper-button-next" id="next-btn"></div>
+            <div class="swiper-pagination" id="pagination"></div>
+        </div>
+    <!-- suporte a libras do govbr -->
+    </section>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+</body>
+
+</html>

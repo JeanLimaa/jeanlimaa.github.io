@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+
+
+}
+body {
+    background: linear-gradient(#35b5cc, #445);
+    min-height: 100vh;
+    text-align: center;
+}
+.pokedexContainer {
+    display: inline-block;
+    position: relative;
+    margin-top: 2%;
+    padding: 15px;
+}
+.pokedex {
+    width: 100%;
+    max-width: 425px;
+}
+.pokemon_image {
+    position: absolute;
+    left: 50%;
+    bottom: 48%;
+    width: 31%;
+    transform: translate(-63%, 0);
+
+}
+.pokemon_data{
+    position: absolute;
+    font-weight: 600;
+    color: #aaa;
+    top: 54.5%;
+    right: 27%;
+    font-size: clamp(8px, 5vw, 25px);
+}
+.pokemon_name {
+    color: #445;
+    text-transform: capitalize;
+}
+.form {
+    position: absolute;
+    top: 65%;
+    width: 65%;
+    left: 13.5%;
+}
+.input__search{
+    width: 100%;
+    padding: 4%;
+    outline: none;
+    border: #333 solid;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: clamp(8px, 5vw, 1rem);
+    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
+}
+.buttons {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 65%;
+    transform: translate(-57%, 0);
+    display: flex;
+    gap: 20px;
+}
+.button {
+    width: 50%;
+    font-weight: 600;
+    padding: 4%;
+    border-radius: 5px;
+    border: 2px solid #000;
+    font-size: clamp(5px, 5vw, 1rem);
+    color: white;
+    background-color: #444;
+    box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+}
+.button:active {
+color: red;
+box-shadow: inset -5px 6px 0 #222, -5px 7px 0 #000;
+font-size: 90%;
+}
+
+
+.skillsContainer{
+    display: inline-block;
+    margin-top: 2%;
+    padding: 15px;
+    position: relative;
+    
+}
+.imagemSkill{
+    width: 100%;
+    max-width: 425px;
+}
+
+.skill{
+    position: absolute;
+    font-weight: 600;
+    color: #000000;
+    font-size: clamp(5px, 6vw, 30px);
+    top: 25%;
+    left: 13%;
+    text-transform: capitalize;
+    text-align: left;
+    
+}
+.skillName,
+.skillName2,
+.skillName3{
+    padding: 2px;
+    display: flex;
+    color: white;
+}
+.statusHp,
+.statusDefense, 
+.statusAttack,
+.statusSpeed{
+    padding: 2px;
+    display: flex;
+    color: white;
+    background-color: #5a34b4;
+}
+
+.statusHp::before,
+.statusDefense::before,
+.statusAttack::before,
+.statusSpeed::before {
+  display: inline-block;
+  content: "";
+  width: 30px;
+  height: 33px;
+  margin-right: 3px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.statusHp::before {
+  background-image: url(../icon/blackHearth.png);
+}
+
+.statusAttack::before {
+  background-image: url(../icon/sword-icon.png);
+}
+
+.statusDefense::before {
+    background-image: url(../icon/shield.png);
+}
+
+.statusSpeed::before {
+  background-image: url(../icon/speed.png);
+}
+.elementGrass::before,
+.elementFire::before,
+.elementWater::before, 
+.elementDark::before,
+.elementFairy::before,
+.elementElectric::before,
+.elementFight::before,
+.elementGround::before,
+.elementIce::before,
+.elementNormal::before,
+.elementPoison::before, 
+.elementPsy::before,
+.elementRock::before, 
+.elementSteel::before,
+.elementDragon::before,
+.elementFlying::before,
+.elementBug::before,
+.elementGhost::before{
+display: inline-block;
+content: "";
+width: 28px;
+height: 30px;
+margin-right: 5px;
+background-repeat: no-repeat;
+background-size: contain;
+padding: 2px;
+display: flex;
+color: white;
+}
+.elementGrass::before{
+    background-image: url(../imagem/elements/grass.webp);
+}
+.elementFire::before{
+    background-image: url(../imagem/elements/fire.png)
+}
+.elementWater::before{
+    background-image: url(../imagem/elements/water.png);
+}
+.elementDark::before{
+    background-image: url(../imagem/elements/dark.png);
+}
+.elementFairy::before{
+    background-image: url(../imagem/elements/fairy.png)
+}
+.elementElectric::before{
+    background-image: url(../imagem/elements/electric.png);
+}
+.elementFight::before{
+    background-image: url(../imagem/elements/fight.png);
+}
+.elementGround::before{
+    background-image: url(../imagem/elements/ground.png)
+}
+.elementIce::before{
+    background-image: url(../imagem/elements/ice.png);
+}
+.elementNormal::before{
+    background-image: url(../imagem/elements/normal.png);
+}
+.elementPoison::before{
+    background-image: url(../imagem/elements/poison.png)
+}
+.elementPsy::before{
+    background-image: url(../imagem/elements/psy.png);
+}
+.elementRock::before{
+    background-image: url(../imagem/elements/rock.png)
+}
+.elementSteel::before{
+    background-image: url(../imagem/elements/steel.png);
+}
+.elementDragon::before{
+    background-image: url(../imagem/elements/dragon.png)
+}
+.elementFlying::before{
+    background-image: url(../imagem/elements/flying.png);
+}
+.elementBug::before{
+    background-image: url(../imagem/elements/bug.png)
+}
+.elementGhost::before{
+    background-image: url(../imagem/elements/ghost.png);
+}
+
+
+.buttonsColor {
+height: 100%;
+width: 100%;
+text-align: center;
+position: relative;
+background-color: #000;
+padding-bottom: 20px;
+
+}
+.frontButton{
+    width: 13%;
+    height: 12%;
+    text-align: center;
+    max-width: 63px;
+    max-height: 63px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.backButton{
+    width: 13%;
+    height: 12%;
+    text-align: center;
+    max-width: 63px;
+    max-height: 63px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.shinyButton{
+    width: 13%;
+    height: 12%;
+    text-align: center;
+    max-width: 63px;
+    max-height: 63px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.backShinyButton{
+    width: 13%;
+    height: 12%;
+    text-align: center;
+    max-width: 63px;
+    max-height: 63px;
+    cursor: pointer;
+}
+.textPositionPokemon{
+    margin-bottom: 2vh;
+    color: antiquewhite;
+}

@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS Externo-->
+  <link href="style.css" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+  <title>Pagina Inicial</title>
+</head>
+
+<body>
+  <!--divisão principal-->
+  <div id="mainConteiner1">
+
+<!--Carrousel ao lado da tela de login-->
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" style="width: 40%; height: 40%;">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="Barber-carousel-1.png" alt="Primeiro Slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="Barber-carousel-2.png" alt="Segundo Slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="Barber-carousel 3.png" alt="Terceiro Slide">
+    </div>
+  </div>
+</div>
+
+    <!-- divisão secundaria-->
+    <div id="conteiner">
+      <section>
+        <!--formulario de login que direciona para pagina de serviços-->
+        <form method="post">
+          <p id="textsw">
+            ÁREA DE LOGIN</p>
+          <!-- campo para login, seguido do botão de login -->
+          <div class="form-floating mb-3">
+            <input type="email" id="email" name="email" class="form-control" id="floatingInput" style="width: 450px;"
+              placeholder="name@example.com" required>
+            <label for="floatingInput">Email</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" id="wsenha" class="form-control" id="floatingPassword" placeholder="Senha"
+              style="width: 450px;" required>
+            <label for="floatingPassword">Senha</label>
+          </div>
+          <br>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button type="submit" class="btn btn-primary" id="botao2" onclick="logar(); return false">Login</button>
+          </div>
+          <br>
+        </form>
+        <!-- botão para acesso à pagina de cadastro -->
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <a href="cadastro.html">
+            <button type="submit" class="btn btn-primary" id="botao2">Cadastre-se</button>
+          </a>
+        </div>
+
+    </div>
+    </section>
+  </div>
+  
+  <!--section com o pitch e comentario sobre a empresa-->
+ <section>
+
+  <div id="mainContainerPitch">
+    <div style="float: left; padding-left: 60px;">
+    <p style="text-align: center; color: #B3AEA1; padding-top: 20px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+      BARBEARIA SALVADOR <br> <br>
+      SOMOS A MELHOR BARBEARIA DA CIDADE! <br> <br>
+      O AGENDAMENTO FACILITA COM QUE VOCÊ SEJA <br>
+      ATENDIDO NO MOMENTO EXATO EM QUE CHEGAR. <br> <br>
+      FAÇA JÁ O SEU AGENDAMENTO CONOSCO!
+    </p>
+  </div>
+    <div align="center">
+      <iframe width="400" height="250" style="border-radius: 30px;" src="https://www.youtube.com/embed/XSWQ25eM5gY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+  </div>
+
+    
+ </section>
+
+  <!--script para validar login-->
+  <script>
+    function logar() {
+      var email = document.getElementById('email').value;
+      var pass = document.getElementById('wsenha').value;
+
+      const loginSenha = [
+        { login: 'admin@hotmail.com', senha: 'admin' },
+        { login: 'jean@hotmail.com', senha: 'jean123' },
+        { login: 'diego@hotmail.com', senha: 'diego123' },
+        { login: 'guilherme@hotmail.com', senha: 'guilherme123' },
+        { login: 'bruno@hotmail.com', senha: 'bruno123' },
+        { login: 'arthur@hotmail.com', senha: 'arthur123' }
+      ];
+      const wloginSenha = loginSenha.some((user, index, array) => user.login === email && user.senha === pass);
+      if (wloginSenha === true) {
+        alert('Logado com sucesso!')
+        location.href = 'paginaservicos.html';
+      }
+      else {
+        alert('Email ou senha incorretos.')
+      }
+    }
+  </script>
+
+  <!--script do bootstrap-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+  <!--Roda-pé. / section 3-->
+  <section>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <!--Informações de horarios de funciomanento - no roda pé-->
+        <div class="col-sm-12 col-md-6">
+          <h6>Horarios de Funcionamento</h6>
+          <p class="text-justify">Segunda a Sexta das 8:00 às 18:00<br>Sábados das 8:00 ás 12:00</p>
+        </div>
+        <!--Informações dos tipos de Serviços prestados - no roda pé-->
+        <div class="col-xs-6 col-md-3">
+          <h6>Serviços</h6>
+          <ul class="footer-links">
+            <li>
+              <p>Corte Simples</p>
+            </li>
+            <li>
+              <p>Corte Navalhado</p>
+            </li>
+            <li>
+              <p>Cabelo e Barba</p>
+            </li>
+            <li>
+              <p>Sobrancelha</p>
+            </li>
+          </ul>
+        </div>
+        <!--Links para pagina inicial e contato - no roda pé-->
+        <div class="col-xs-6 col-md-3">
+          <h6>Links Rapidos</h6>
+          <ul class="footer-links">
+            <li><a href="index.html">Pagina Inicial</a></li>
+            <li><a href="https://chat.whatsapp.com/DR1xB25cqs391E68fXnWdC" target="_blank">Contate Nossa Equipe</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <!--mensagem informando ter os direitos reservados-->
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2023, Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+</section>
+</body>
+
+</html>

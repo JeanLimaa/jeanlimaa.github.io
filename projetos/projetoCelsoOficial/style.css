@@ -1,0 +1,177 @@
+/*css externo utilizado nas páginas: index, paginaservicos e cadastro*/
+/* zerando a margem do body*/
+body {
+  margin: 0px;
+}
+
+
+#mainContainerPitch{
+  background-color: #444242;
+  height: 100%;
+  width: 100%;
+  
+}
+#pitch{
+  width: auto;
+  height: auto;
+  
+}
+
+/* tamanho input de login*/
+#inputsEmailSenha {
+  width: 150px;
+}
+
+/*botões, padrão tamanho/animação/cor*/
+#botao2 {
+  background-color: white;
+  color: black;
+  border-color: #B3AEA1;
+  width: 200px;
+  height: 40px;
+}
+
+#botao3 {
+  background-color: white;
+  color: black;
+  border-color: #B3AEA1;
+}
+
+#botao2:hover,
+#botao3:hover {
+  transition: 0, 5s;
+  overflow: auto;
+  background-color: #B3AEA1;
+  color: white;
+}
+
+/* textos padrão*/
+#textsw {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 30px;
+  color: #B3AEA1;
+}
+
+/*design dos containers principais*/
+#mainConteiner1 {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 15%;
+}
+
+#mainConteiner2 {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 10rem;
+}
+
+#mainConteiner3 {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 10rem;
+  text-align: center;
+}
+
+/*containers secundarios*/
+#conteiner {
+  display: flex;
+  background-color: #26272b;
+  border-radius: 40px;
+  height: 400px;
+  width: 600px;
+  padding: 30px;
+  justify-content: center;
+}
+
+#conteiner2 {
+  display: flex;
+  background: #26272b;
+  border-radius: 40px;
+  height: 38rem;
+  width: 30rem;
+  padding: 30px;
+  justify-content: center;
+  align-content: center;
+
+}
+
+#conteiner3 {
+  background-color: #26272b;
+  width: 40rem;
+  height: 40rem;
+  border-radius: 40px;
+  padding: 40px;
+}
+
+
+/*css utilizado no rodapé*/
+
+.site-footer {
+  background-color: #26272b;
+  padding: 45px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #737373;
+}
+
+.site-footer hr {
+  border-top-color: #bbb;
+  opacity: 0.5
+}
+
+.site-footer hr.small {
+  margin: 20px 0
+}
+
+.site-footer h6 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px
+}
+
+.site-footer a {
+  color: #737373;
+}
+
+.site-footer a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.footer-links {
+  padding-left: 0;
+  list-style: none
+}
+
+.footer-links li {
+  display: block
+}
+
+.footer-links a {
+  color: #737373
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.footer-links.inline li {
+  display: inline-block
+}
+
+.copyright-text {
+  margin: 0
+}

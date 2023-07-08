@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+body {
+    color: #000000;
+    background-color: var(--background-color);
+}
+:root {
+    /* --background-color: #1f242d;
+    --alternative-color: #323946; */
+    --border-color: #333;
+    --background-color: #E1CAA9;
+    --alternative-color: #fae3c2;
+    --color-test: #59482F;
+    --active-color: #fbff04;
+}
+html {
+    font-size: 62%;
+    overflow-x: hidden;
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+#carouselExampleIndicators {
+    width: 50rem;
+}
+/* teste */
+
+header {
+    padding: 1.4rem 8%;
+    position: fixed;
+    width: 100%;
+    background: var(--color-test);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    z-index: 100;
+    border-bottom: 1px solid var(--border-color);
+}
+span {
+    color: rgb(248, 4, 4);
+}
+#logo-name {
+    font-size: 2.5rem;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    outline: none;
+}
+#logo-img {
+    width: 8rem;
+    
+}
+nav.navbar {
+    gap: 1.5rem;
+}
+
+.btn-header a{
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+}
+.btn-header {
+    background-color: var(--color-test);
+    border: 0.2rem solid #fff;
+    width: 9.2rem;
+    height: 4.5rem;
+    font-size: 1.6rem;
+    border-radius: 0.4rem;
+    transition: 0.4s;
+}
+.btn-header:hover {
+    transform: scale(1.1);
+    border: 0.2rem solid var(--active-color);
+}
+
+/* para scroll section */
+.btn-header a.active, .btn-header a:hover{
+    color: var(--active-color);
+}
+.btn-header.active {
+    border-color: var(--active-color);
+}
+h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 7rem;
+}
+
+section.home {
+    display: grid;
+    align-items: center;
+    padding: 12rem 8% 2rem;
+    
+}
+.home-content {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    /* gap: 10rem; 
+    gap quebrando a responsividade*/
+}
+.home-text{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 62%;
+    
+}
+.home-text p{
+    padding: 0 8rem;
+    min-width: 10rem;
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-align: justify;
+}
+.home-text #text-home-apresentation {
+    height: 31.5rem;
+    background-color: var(--alternative-color);
+    border-radius: 3rem;
+    box-shadow: 0 0 0 0.4px rgba(0, 0, 0, 0.5);
+    display: flex;
+    place-items: center;
+}
+.home-text #personagem-one {
+    padding-right: 2.6rem;
+    width: 20rem;
+    height: 30rem;
+}
+
+.home-content h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+.home-images-bottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    text-align: center;
+    
+}
+.home-images-bottom img, .home-images-bottom iframe{
+    height: 19rem;
+    width: 33rem;
+    border-radius: 2rem;
+    border: 1px solid var(--border-color);
+}
+.home-images-bottom h3{
+    font-size: 3rem;
+}
+.home-img img {
+    width: 50rem;
+    height: 38rem;
+    border-radius: 1rem;
+}
+/* .home-buttons .btn{
+    padding: 1rem;
+    width: 15rem;
+} */
+li {
+    font-size: 2rem;
+    text-align: justify;
+}
+ul {
+    margin: 5rem;
+    text-align: justify;  
+}
+.pontosPositivos-box {
+    display: flex;
+    width: 80vw;
+    align-items: center;
+}
+.pontosPositivos-text {
+    text-align: center;
+    width: 80rem;
+}
+.pontosNegativos-box {
+    margin-top: 15rem;
+    display: flex;
+    width: 80vw;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.pontosNegativos-text {
+    text-align: center;
+    width: 50rem;
+}
+
+.inovation-box {
+    display: flex;
+    align-items: center;
+    width: 80vw;
+}
+.inovation-text {
+    text-align: center;
+    width: 80rem;
+    
+}
+.inovation-box-reverse {
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 80vw;
+}
+.inovation-text-reverse {
+    text-align: center;
+    width: 80rem;
+}
+#musicDiv {
+    margin-top: 15rem;
+}
+#music{
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    gap: 6rem;
+    margin-bottom: 13rem;
+}
+section.inovation img, section.inovation iframe{
+    width: 80rem;
+    height: 50rem;
+    border-radius: 2rem;
+    border: black 1px solid;
+}
+/*  */
+section.gameAvaliation {
+    background-color: var(--alternative-color);
+}
+/*  */
+section.gameAvaliation img, section.inovation iframe{
+    width: 80rem;
+    height: 50rem;
+    border-radius: 2rem;
+    border: black 1px solid;
+}
+section.dados {
+    background-color: var(--alternative-color);
+}
+.graphichs-container {
+    position: relative;
+    display: flex;
+    height: 40rem;
+    width: 60vw;
+    margin: 5rem;
+    gap: 5rem;
+    margin-bottom: 10rem;
+    text-align: justify;
+}
+
+.graphichs-container p {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/* team */
+section.team {
+    padding: 10rem 18% 2rem;
+}
+
+.team-container {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    
+}
+.team-container .team-box {
+    flex: 1 1 30rem;
+    background: var(--alternative-color);
+    padding: 1.6rem 2rem 5rem 2rem;
+    height: 36rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--border-color);
+}
+.team-container .team-box img {
+    margin-top: 1.6rem;
+    width: 25rem;
+    height: 28vh;
+    border-radius: 2rem;
+}
+.team-container .team-box:hover {
+    border-color: var(--color-test);
+    transform: scale(1.02);
+}
+
+.team-box h3 {
+    margin-top: 0.5rem;
+    font-size: 2.6rem;
+}
+
+.team-box p {
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
+.music-box {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2rem;
+}
+@media (max-width: 1200px) {
+    html {
+        font-size: 50%;
+    }
+}
+@media (max-width: 1000px) {
+    html {
+        font-size: 40%;
+    }
+}

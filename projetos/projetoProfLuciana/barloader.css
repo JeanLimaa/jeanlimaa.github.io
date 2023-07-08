@@ -1,0 +1,18 @@
+.custom-loader {
+    width:45px;
+    height:60px;
+    --c:linear-gradient(rgb(248, 4, 4) 0 0);
+    background: 
+      var(--c) 0%   50%,
+      var(--c) 50%  50%,
+      var(--c) 100% 50%;
+    background-size:9px 50%;
+    background-repeat: no-repeat;
+    animation:b7 2s infinite linear alternate;
+  }
+  @keyframes b7 {
+      20% {background-size:9px 20% ,9px 50% ,9px 50% }
+      40% {background-size:9px 100%,9px 20% ,9px 50% }
+      60% {background-size:9px 50% ,9px 100%,9px 20% }
+      80% {background-size:9px 50% ,9px 50% ,9px 100%}
+  }

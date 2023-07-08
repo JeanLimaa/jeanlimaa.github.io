@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="shortcut icon" href="./icon/favicon-16x16.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/script.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="buttonsColor">
+
+            <legend for="frontButton" class="textPositionPokemon">SELECT POSITION/SHINY VIEW: </legend>
+            <img src="" alt="front pokemon" class="frontButton">
+            <img src="" alt="back pokemon" class="backButton">
+            <img src="" alt="front shiny pokemon" class="shinyButton">
+            <img src="" alt="back shiny pokemon" class="backShinyButton">
+            
+            
+        </div>
+
+        <div class="pokedexContainer">
+
+            <h1 class="pokemon_data">
+                <span class="pokemon_number"></span> -
+                <span class="pokemon_name"></span>
+            </h1>
+
+            <form class="form">
+                <input type="search" class="input__search" placeholder="Name or Number" alt="Search pokemon" required>
+            </form>
+
+            <div class="buttons">
+                <button class="button btn-prev" onclick="prevButton()">Prev &lt;</button>
+                <button class="button btn-prev" onclick="nextButton()">Next &gt;</button>
+            </div>
+
+            <img src="" class="pokemon_image">
+            <img src="./imagem/pokedex.png" alt="pokedex" class="pokedex">
+        </div>
+
+        <div class="skillsContainer">
+
+            <img src="./imagem/pokedexSkill.png" alt="skillImagem" class="imagemSkill">
+            
+            <div class="skill">
+                <label for="skillName" class="atributoSkill">Elements: </label>
+                <span class="skillName"></span> 
+                <span class="skillName2"></span> 
+            
+                <label for="statusHp">HP: </label> 
+                <span class="statusHp"></span> 
+                
+                <label for="statusAttack">Attack: </label> 
+                <span class="statusAttack"></span>  
+                
+                <label for="statusDefense">Defense: </label> 
+                <span class="statusDefense"></span>  
+                
+                <label for="statusSpeed">Speed: </label> 
+                <span class="statusSpeed"></span>
+            </div>
+            
+            
+        </div>
+        
+
+    </main>
+</body>
+
+</html>
