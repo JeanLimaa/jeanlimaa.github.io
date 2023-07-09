@@ -401,6 +401,7 @@ section.pontosColeta h2 {
 }
 .pontosColeta-geometry:hover, .pontosColeta-geometry-two:hover{
     border: 0.4rem solid var(--main-color);
+    transition: 1s;
     font-size: 2rem;
     width: 50rem;
     height: 33rem;
