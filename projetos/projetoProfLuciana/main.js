@@ -22,7 +22,6 @@ ScrollReveal().reveal('.home-content h1, .about-img, .home-content p, .about-con
 ScrollReveal().sync();
 
 // icone toggle navbar
-
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
@@ -55,7 +54,10 @@ window.onscroll = () => {
             });
         };
     });
-  }
+        // remover icone toggle quando clicar no link dentro do navbar
+        menuIcon.classList.remove('bx-x');
+        navbar.classList.remove('active');
+  };
 
 
 
@@ -64,6 +66,7 @@ const ctx = document.getElementById('graphichs-chart');
 const ctx2 = document.getElementById('graphichs-chart2');
 const ctx3 = document.getElementById('graphichs-chart3');
 const ctx4 = document.getElementById('graphichs-chart4');
+const ctx5 = document.getElementById('graphichs-chart5');
     
 new Chart(ctx, {
   type: 'pie',
@@ -122,6 +125,25 @@ new Chart(ctx3, {
   }
 });
 new Chart(ctx4, {
+  type: 'bar',
+  data: {
+    labels: ['10-14 anos', '14-18 anos', '18+ anos'],
+    datasets: [{
+      label: 'Idade dos jogadores',
+      data: [12, 19, 3],
+      borderWidth: 1
+    }]
+  },
+  options: {
+
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});
+new Chart(ctx5, {
   type: 'bar',
   data: {
     labels: ['10-14 anos', '14-18 anos', '18+ anos'],

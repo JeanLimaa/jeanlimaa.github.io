@@ -27,7 +27,9 @@ html {
     font-size: 62%;
     overflow-x: hidden;
 }
-
+video {
+    object-fit: cover;
+}
 section {
     min-height: 100vh;
     padding: 10rem 9% 2rem;
@@ -116,9 +118,7 @@ section.home {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-
-    /* gap: 10rem; 
-    gap quebrando a responsividade*/
+    
 }
 .home-text{
     display: flex;
@@ -126,10 +126,10 @@ section.home {
     flex-direction: row;
     flex-wrap: nowrap;
     width: 62%;
-    
+    margin-right: 3rem;
 }
 .home-text p{
-    padding: 0 8rem;
+    padding: 0 6rem;
     min-width: 10rem;
     font-size: 2.2rem;
     font-weight: 600;
@@ -261,25 +261,38 @@ section.gameAvaliation img, section.inovation iframe{
 section.dados {
     background-color: var(--alternative-color);
 }
+section.dados {
+    padding: 6rem 0;
+    margin: 0 auto;
+}
+.graphichs-main {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
 .graphichs-container {
     position: relative;
     display: flex;
+    flex-direction: row;
     height: 40rem;
-    width: 60vw;
-    margin: 5rem;
-    gap: 5rem;
-    margin-bottom: 10rem;
-    text-align: justify;
+    margin: 3rem;
+    gap: 3rem;
+    margin-bottom: 6rem;
+    align-items: center;
 }
-
 .graphichs-container p {
     font-size: 2rem;
     font-weight: 500;
+}
+.graphichs {
+    width: 27vw !important;
+    height: 35rem !important;
 }
 
 /* team */
 section.team {
     padding: 10rem 18% 2rem;
+    background-color: var(--bg-color);
 }
 
 .team-container {
@@ -303,7 +316,7 @@ section.team {
 .team-container .team-box img {
     margin-top: 1.6rem;
     width: 25rem;
-    height: 28vh;
+    height: 28rem;
     border-radius: 2rem;
 }
 .team-container .team-box:hover {
@@ -326,13 +339,175 @@ section.team {
     flex-wrap: nowrap;
     gap: 2rem;
 }
-@media (max-width: 1200px) {
+#menu-icon {
+    font-size: 3.6rem;
+    display: none;
+    color: var(--alternative-color);
+}
+
+@media (max-width: 1450px) {
     html {
-        font-size: 50%;
+        font-size: 53.5%;
     }
+    section.home {
+        padding: 12rem 5% 2rem;   
+    }
+    .home-img img {
+        width: 45rem;
+    }
+}
+@media (max-width: 1220px) {
+    html {
+        font-size: 48%;
+    }
+    .team-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-content: center;
+    }
+    section.team{
+        padding: 10rem 9%;
+    }
+    .team-container .team-box img {
+        width: 80%;
+    }
+
 }
 @media (max-width: 1000px) {
     html {
         font-size: 40%;
+    }
+    .graphichs {
+        width: 42vw !important;
+    }
+}
+@media (max-width: 840px){
+    .home-text #personagem-one{
+        width: 13rem;
+        height: 27rem;
+    }
+    #carouselExampleIndicators {
+        width: 42rem !important;
+    }
+}
+@media (max-width: 768px) {
+    html {
+        font-size: 38%;
+    }
+    .home-content{
+        flex-wrap: wrap-reverse;
+        gap: 4rem;
+        justify-content: center;
+    }
+    #carouselExampleIndicators{
+        width: 100vw !important;
+    }
+    section.home, section{
+        padding: 5rem 0;
+    }
+    .home-text #text-home-apresentation{
+        position: absolute;
+        margin-left: 5rem;
+        height: 30rem;
+        width: 60vw;
+    }
+    .home-text #personagem-one {
+        z-index: 1;
+        margin-right: 1rem;
+    }
+    .pontosNegativos-box, .pontosPositivos-box{
+        width: 100%;
+    }
+    .inovation-box, .inovation-box-reverse{
+        width: 100%;
+    }
+    section.inovation iframe {
+        width: 100%;
+    }
+    .team-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .home-images-bottom img, .home-images-bottom iframe {
+        width: 32.4vw;
+        height: 23rem;
+    }
+    .home-images-bottom{
+        justify-content: center;
+        gap: 0.4rem;
+    }
+    .btn-header {
+        width: 15rem;
+    }
+    #menu-icon {
+        display: block;
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--color-test);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+
+    }
+    .navbar.active {
+        display: block;
+    }
+    .navbar button {
+        display: block;
+        margin: 3rem 0;
+    }
+    .navbar button a {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 550px) {
+    .graphichs-main {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+    .graphichs {
+        width: 65vw !important;
+    }
+    .inovation-box-reverse, .inovation-box, .pontosNegativos-box, .pontosPositivos-box{
+        flex-direction: column;
+    }
+    .pontosNegativos-text, .pontosPositivos-text, .inovation-text-reverse, .inovation-text{
+        width: 80vw !important;
+    }
+    .carousel{
+        width: 80vw !important;
+    }
+    .home-text p {
+        font-size: 1.8rem;
+    }
+}
+@media (max-width: 460px) {
+    .graphichs {
+        width: 80vw !important;
+    }
+    .team-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .home-text p {
+        font-size: 1.45rem;
+    }
+    .home-images-bottom {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 6rem;
+    }
+    .home-images-bottom img, .home-images-bottom iframe{
+        width: 46vw;
+    }
+    .music-box{
+        width: 80vw;
+    }
+}
+@media(max-width: 320px) {
+    .home-text p {
+        font-size: 1.45rem;
     }
 }
