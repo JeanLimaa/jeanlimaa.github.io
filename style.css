@@ -355,6 +355,16 @@ section.about {
     #menu-icon {
         display: block;
     }
+    .contentFlagEua, .contentFlagBr {
+        visibility: visible;
+    }
+    .contentFlagEua,
+.contentFlagBr,
+.navbar:hover .contentFlagEua,
+#active-flag,
+.navbar:hover .contentFlagBr {
+    display: block;
+}
     .services-container {
         grid-template-columns: repeat(1, 1fr);
     }
