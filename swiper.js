@@ -2,7 +2,7 @@ const swiper = new Swiper(".swiper", {
   effect: 'coverflow',
   grabCursor: true,
   centeredSlides: true,
-  slidesPerView: 2,
+  slidesPerView: 1,
   coverflowEffect: {
     rotate: 20,
     stretch: 100,
@@ -27,6 +27,7 @@ const swiper = new Swiper(".swiper", {
     },
     1024: {
       slidesPerView: 3,
-      spaceBetween: 40,},
+      spaceBetween: 40,
+    },
 },
 });
