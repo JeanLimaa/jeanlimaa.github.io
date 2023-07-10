@@ -62,27 +62,21 @@ window.onscroll = () => {
             });
         };
     });
-
-    let header = document.querySelector('header');
-
-    header.classList.toggle('sticky', window.scrollY > 100);
-
     // remover icone toggle quando clicar no link dentro do navbar
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
+
+    if(window.scrollY > 0) {
+        arrow.style.display = 'inline-block';
+    } else {
+        arrow.style.display = 'none';
+    }
 };
 
 //arrow ao rolar o scroll
 let arrow = document.getElementById('arrow');
 arrow.style.display = 'none';
 
-window.onscroll = () => {
-    if(window.scrollY > 0) {
-        arrow.style.display = 'inline-block';
-    } else {
-        arrow.style.display = 'none';
-    }
-}
 //abrir o video de libras e fechar
 let libraYuri = document.querySelector('.libras-pitch');
 let libraAccess = document.querySelector('.libras-access');
@@ -100,11 +94,3 @@ let pitchClose = document.querySelector('#close-pitch');
 pitchApresentation.style.display = 'none';
 pitchAccess.onclick = () => {pitchApresentation.style.display = 'block';};
 pitchClose.onclick = () => {pitchApresentation.style.display = 'none';};
-
-
-
-
-
-
-
-
