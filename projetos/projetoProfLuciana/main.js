@@ -69,12 +69,12 @@ const ctx4 = document.getElementById('graphichs-chart4');
 const ctx5 = document.getElementById('graphichs-chart5');
     
 new Chart(ctx, {
-  type: 'pie',
+  type: 'bar',
   data: {
-    labels: ['10-14 anos', '14-18 anos', '18+ anos'],
+    labels: ['Sim', 'Não', 'Médio'],
     datasets: [{
-      label: 'Idade dos jogadores',
-      data: [12, 19, 3],
+      label: 'POSSUI FÁCIL COMPREENSÃO?',
+      data: [6, 3, 2],
       borderWidth: 1
     }]
   },
@@ -87,12 +87,12 @@ new Chart(ctx, {
   }
 });
 new Chart(ctx2, {
-  type: 'doughnut',
+  type: 'line',
   data: {
-    labels: ['10-14 anos', '14-18 anos', '18+ anos'],
+    labels: ['Ruim', 'Médio', 'Ótimo'],
     datasets: [{
-      label: 'Idade dos jogadores',
-      data: [12, 19, 3],
+      label: 'CLASSIFICAÇÃO DA JOGABILIDADE',
+      data: [44, 28, 28],
       borderWidth: 1
     }]
   },
@@ -106,12 +106,12 @@ new Chart(ctx2, {
   }
 });
 new Chart(ctx3, {
-  type: 'line',
+  type: 'bar',
   data: {
-    labels: ['10-14 anos', '14-18 anos', '18+ anos'],
+    labels: ['Falta de dinâmica', 'Falta de acessibilidade', 'Produtivo'],
     datasets: [{
-      label: 'Idade dos jogadores',
-      data: [12, 19, 3],
+      label: 'OPINIÃO GERAL',
+      data: [8, 1, 3],
       borderWidth: 1
     }]
   },
@@ -125,12 +125,12 @@ new Chart(ctx3, {
   }
 });
 new Chart(ctx4, {
-  type: 'bar',
+  type: 'line',
   data: {
-    labels: ['10-14 anos', '14-18 anos', '18+ anos'],
+    labels: ['Nenhum', 'Estética/Diversão', 'Aprendizado administrativo'],
     datasets: [{
-      label: 'Idade dos jogadores',
-      data: [12, 19, 3],
+      label: 'ASPECTOS POSITIVOS',
+      data: [4, 4, 3],
       borderWidth: 1
     }]
   },
@@ -146,10 +146,10 @@ new Chart(ctx4, {
 new Chart(ctx5, {
   type: 'bar',
   data: {
-    labels: ['10-14 anos', '14-18 anos', '18+ anos'],
+    labels: ['Dificuldade ao acessar', 'Falta de dinamismo', 'Outros'],
     datasets: [{
-      label: 'Idade dos jogadores',
-      data: [12, 19, 3],
+      label: 'ASPECTOS NEGATIVOS',
+      data: [6, 5, 3],
       borderWidth: 1
     }]
   },

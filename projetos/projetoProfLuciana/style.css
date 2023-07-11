@@ -110,7 +110,7 @@ h1 {
 section.home {
     display: grid;
     align-items: center;
-    padding: 12rem 8% 2rem;
+    padding: 10rem 8% 2rem;
     
 }
 .home-content {
@@ -486,7 +486,7 @@ section.team {
 }
 @media (max-width: 460px) {
     .graphichs {
-        width: 80vw !important;
+        width: 90vw !important;
     }
     .team-container {
         grid-template-columns: repeat(1, 1fr);
@@ -509,5 +509,8 @@ section.team {
 @media(max-width: 320px) {
     .home-text p {
         font-size: 1.45rem;
+    }
+    .graphichs {
+        width: 94vw !important;
     }
 }

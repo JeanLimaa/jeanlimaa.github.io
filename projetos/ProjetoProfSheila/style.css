@@ -46,15 +46,18 @@ section {
 .acessibility .acessibility-icon a img {
     width: 6rem;
     height: 5rem;
+    cursor: pointer;
 }
 .acessibility .font-size-icon a i, .acessibility .youtube-icon a i{
     font-size: 4.5rem;
 }
 .acessibility .youtube-icon a i{
     color: #fd0202;
+    cursor: pointer;
 }
 .acessibility .font-size-icon a i{
     color: var(--main-color);
+    cursor: pointer;
 }
 .header {
     position: fixed;
