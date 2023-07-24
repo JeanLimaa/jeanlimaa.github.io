@@ -1,4 +1,6 @@
-# Olá! Eu me chamo Jean Lima, atualmente aprendendo tecnologias no Front-End!
+# Olá, Eu me chamo Jean Lima!
+- 🏖️ Front-End
+- 🌾 Estudando TypeScript e React.js
 
 <div style="display: inline_block"><br>
   <img align="center" alt="Rafa-React" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
